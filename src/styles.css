@@ -1692,33 +1692,19 @@ img {
 
 .story-images-asymmetric {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   position: relative;
 }
 
 .story-img-main {
-  height: 440px;
+  height: 520px;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
 
 .story-img-main img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.story-img-sub {
-  height: 380px;
-  margin-top: 40px;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-.story-img-sub img {
   width: 100%;
   height: 100%;
   object-fit: cover;

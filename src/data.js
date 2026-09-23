@@ -1,6 +1,8 @@
 // Comprehensive travel data for INDIAWANDER luxury travel discovery platform
 // Auto-generated with 12 Indian Regions and 42 Detailed Travel Packages
 
+export { VIEW_ONLY_MODE } from './config/siteConfig';
+
 export const HERO_DESTINATIONS = [
   {
     id: 'ladakh-pangong',
@@ -444,8 +446,8 @@ export const DESTINATIONS = [
     "region": "Islands",
     "tagline": "Turquoise atolls, coral gardens & untouched beaches",
     "description": "An archipelago of emerald islands ringed by coral reefs and powder beaches, surrounded by the indigo Bay of Bengal.",
-    "heroImage": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1600&q=85",
-    "thumbnail": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=800&q=80",
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=85",
+    "thumbnail": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
     "bestTime": "October \u2013 May",
     "startPrice": "\u20b928,999",
     "rating": "4.96",
@@ -478,7 +480,7 @@ export const DESTINATIONS = [
       "Cruising between islands aboard luxury high-speed catamarans"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
       "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80"
     ]
   },
@@ -533,8 +535,8 @@ export const DESTINATIONS = [
     "region": "East",
     "tagline": "Kangchenjunga shadows, prayer wheels & rhododendrons",
     "description": "India's first 100% organic state, framed by the mighty Mount Kangchenjunga, glacial lakes, and cliffside monasteries.",
-    "heroImage": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1600&q=85",
-    "thumbnail": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=800&q=80",
+    "heroImage": "/images/sikkim.jpg",
+    "thumbnail": "/images/sikkim.jpg",
     "bestTime": "March \u2013 May & October \u2013 mid-December",
     "startPrice": "\u20b922,999",
     "rating": "4.93",
@@ -567,7 +569,7 @@ export const DESTINATIONS = [
       "Listening to horn chants at Rumtek during morning prayers"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?auto=format&fit=crop&w=1600&q=85"
     ]
   },
   {
@@ -694,7 +696,7 @@ export const FEATURED_DESTINATIONS = [
     "slug": "andaman-nicobar",
     "name": "Andaman",
     "title": "Islands of Turquoise",
-    "image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
     "season": "Tropical Island",
     "rating": 4.96,
     "tag": "Island Escape"
@@ -712,7 +714,7 @@ export const FEATURED_DESTINATIONS = [
     "slug": "sikkim",
     "name": "Sikkim",
     "title": "Kangchenjunga Splendor",
-    "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=85",
+    "image": "/images/sikkim.jpg",
     "season": "Spring Blooms",
     "rating": 4.93,
     "tag": "Himalayan"
@@ -2822,7 +2824,7 @@ export const TRAVEL_PACKAGES = [
     "price": "From \u20b918,999",
     "rawPrice": 18999,
     "shortDesc": "Discover Portuguese colonial heritage in Fontainhas, UNESCO baroque cathedrals in Old Goa, and secluded white beaches in South Goa.",
-    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85",
     "isPopular": true,
     "tag": "Culture & Coast",
     "rating": 4.92,
@@ -4494,7 +4496,7 @@ export const TRAVEL_PACKAGES = [
     "price": "From \u20b928,999",
     "rawPrice": 28999,
     "shortDesc": "High-speed catamaran across azure seas to Radhanagar Beach (voted among Asia\u2019s best), coral reefs of Havelock, and quiet Neil Island.",
-    "image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
     "isPopular": true,
     "tag": "Tropical Luxury",
     "rating": 4.96,
@@ -4588,7 +4590,7 @@ export const TRAVEL_PACKAGES = [
       "Pre-book morning scuba dive slots for optimal underwater clarity."
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
     ],
     "reviewsList": [
@@ -4715,7 +4717,7 @@ export const TRAVEL_PACKAGES = [
       "Keep waterproof pouch for phone during boat boarding."
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
     ],
     "reviewsList": [
       {
@@ -4744,7 +4746,7 @@ export const TRAVEL_PACKAGES = [
     "price": "From \u20b942,999",
     "rawPrice": 42999,
     "shortDesc": "Add a thrilling expedition through tribal forest reserves and dense mangrove creeks to Baratang limestone caves and mud volcanoes.",
-    "image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
     "isPopular": false,
     "tag": "Expedition",
     "rating": 4.98,
@@ -4847,7 +4849,7 @@ export const TRAVEL_PACKAGES = [
       "The drive to Baratang starts at 4:30 AM due to scheduled convoy timings."
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
     ],
     "reviewsList": [
       {
@@ -5412,7 +5414,7 @@ export const TRAVEL_PACKAGES = [
     "price": "From \u20b924,999",
     "rawPrice": 24999,
     "shortDesc": "Experience fluttering prayer flags in Gangtok, the frozen alpine waters of Tsomgo Lake, and the historic Indo-China border at Nathula Pass.",
-    "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?auto=format&fit=crop&w=1600&q=85",
     "isPopular": false,
     "tag": "Himalayan Gateway",
     "rating": 4.92,
@@ -5494,7 +5496,7 @@ export const TRAVEL_PACKAGES = [
       "Nathula Pass requires Indian nationality with advance ID permits; closed on Mondays & Tuesdays."
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?auto=format&fit=crop&w=1600&q=85"
     ],
     "reviewsList": [
       {
@@ -5523,7 +5525,7 @@ export const TRAVEL_PACKAGES = [
     "price": "From \u20b931,999",
     "rawPrice": 31999,
     "shortDesc": "Gaze upon Mount Kangchenjunga face-to-face from Pelling, walk the glass skywalk, and meditate at Buddha Park in Ravangla.",
-    "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
     "isPopular": true,
     "tag": "Bestseller",
     "rating": 4.96,
@@ -5620,7 +5622,7 @@ export const TRAVEL_PACKAGES = [
       "Wake up at 5:00 AM in Pelling for the clearest sunrise view of Kangchenjunga."
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?auto=format&fit=crop&w=1600&q=85"
     ],
     "reviewsList": [
       {
@@ -5649,7 +5651,7 @@ export const TRAVEL_PACKAGES = [
     "price": "From \u20b938,999",
     "rawPrice": 38999,
     "shortDesc": "Journey to Gurudongmar Lake at 17,800 ft (one of the highest lakes on Earth) and the colorful hot spring sanctuary of Yumthang Valley.",
-    "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?auto=format&fit=crop&w=1600&q=85",
     "isPopular": true,
     "tag": "Extreme Alpine",
     "rating": 4.98,
@@ -5753,7 +5755,7 @@ export const TRAVEL_PACKAGES = [
       "Gurudongmar sits at 17,800 ft; avoid heavy exertion and follow our driver's guidance."
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?auto=format&fit=crop&w=1600&q=85"
     ],
     "reviewsList": [
       {
@@ -5782,7 +5784,7 @@ export const TRAVEL_PACKAGES = [
     "price": "From \u20b947,999",
     "rawPrice": 47999,
     "shortDesc": "The complete state grand tour combining Nathula border, North Sikkim flowers, and Mount Kangchenjunga views from Pelling.",
-    "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
     "isPopular": false,
     "tag": "Grand Tour",
     "rating": 4.99,
@@ -5899,7 +5901,7 @@ export const TRAVEL_PACKAGES = [
       "Carry 6 passport-size photographs and original voter ID/passport for military permits."
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?auto=format&fit=crop&w=1600&q=85"
     ],
     "reviewsList": [
       {
@@ -6271,7 +6273,7 @@ export const TRAVEL_EXPERIENCES = [
     title: 'Coastal & Islands',
     count: '14 Journeys',
     desc: 'Untouched turquoise shores, private island hopping, and oceanfront serenity.',
-    image: 'https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
     tags: ['Scuba Diving', 'Sunset Cruises', 'Private Beaches']
   },
   {
@@ -6450,7 +6452,7 @@ export const GALLERY_ITEMS = [
     id: 7,
     title: 'Radhanagar Turquoise Horizon',
     location: 'Andaman Islands',
-    image: 'https://images.unsplash.com/photo-1589330273594-fade1ee91647?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80',
     tag: '@indiawander_andaman',
     aspect: 'portrait'
   },

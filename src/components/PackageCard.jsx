@@ -117,3 +117,4 @@ export default function PackageCard({ pkg, onOpenBooking }) {
     </article>
   );
 }
+
