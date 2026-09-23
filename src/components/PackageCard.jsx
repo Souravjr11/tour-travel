@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, MapPin, ArrowRight, Sparkles, Star } from 'lucide-react';
+import { Clock, MapPin, ArrowRight, Sparkles } from 'lucide-react';
+import { VIEW_ONLY_MODE } from '../config/siteConfig';
 
 export default function PackageCard({ pkg, onOpenBooking }) {
   if (!pkg) return null;
@@ -59,9 +60,13 @@ export default function PackageCard({ pkg, onOpenBooking }) {
         </div>
 
         <h3 className="package-title">
-          <Link to={`/packages/${pkg.slug}`} className="package-title-link">
-            {pkg.title}
-          </Link>
+          {VIEW_ONLY_MODE ? (
+            <span className="package-title-text">{pkg.title}</span>
+          ) : (
+            <Link to={`/packages/${pkg.slug}`} className="package-title-link">
+              {pkg.title}
+            </Link>
+          )}
         </h3>
 
         {/* Tourist Places Covered */}
@@ -74,28 +79,41 @@ export default function PackageCard({ pkg, onOpenBooking }) {
 
         <p className="package-desc">{pkg.shortDesc}</p>
 
-        {/* Rating & Actions Row */}
+        {/* Actions Row */}
         <div className="package-footer-actions">
-          <Link
-            to={`/packages/${pkg.slug}`}
-            className="btn-view-package"
-            aria-label={`View details for ${pkg.title}`}
-          >
-            <span>View Package</span>
-            <ArrowRight size={14} className="action-arrow" />
-          </Link>
+          {VIEW_ONLY_MODE ? (
+            <button
+              type="button"
+              onClick={handlePlanClick}
+              className="btn-plan-trip btn-plan-full"
+              aria-label={`Inquire about ${pkg.title}`}
+            >
+              <span>Inquire This Journey</span>
+              <ArrowRight size={14} className="action-arrow" />
+            </button>
+          ) : (
+            <>
+              <Link
+                to={`/packages/${pkg.slug}`}
+                className="btn-view-package"
+                aria-label={`View details for ${pkg.title}`}
+              >
+                <span>View Package</span>
+                <ArrowRight size={14} className="action-arrow" />
+              </Link>
 
-          <button
-            type="button"
-            onClick={handlePlanClick}
-            className="btn-plan-trip"
-            aria-label={`Plan trip for ${pkg.title}`}
-          >
-            Plan This Trip
-          </button>
+              <button
+                type="button"
+                onClick={handlePlanClick}
+                className="btn-plan-trip"
+                aria-label={`Plan trip for ${pkg.title}`}
+              >
+                Plan This Trip
+              </button>
+            </>
+          )}
         </div>
       </div>
     </article>
   );
 }
-

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import DestinationDetail from './pages/DestinationDetail';
 import PackageDetail from './pages/PackageDetail';
 
+import { VIEW_ONLY_MODE } from './config/siteConfig';
 import './styles.css';
 
 // Scroll restoration helper
@@ -58,14 +59,29 @@ function App() {
             />
           }
         />
+
+        {/* Multi-page detail routes: redirected to main view when in VIEW_ONLY_MODE */}
         <Route
           path="/destinations/:slug"
-          element={<DestinationDetail onOpenBookingWithData={handleOpenBooking} />}
+          element={
+            VIEW_ONLY_MODE ? (
+              <Navigate to="/" replace />
+            ) : (
+              <DestinationDetail onOpenBookingWithData={handleOpenBooking} />
+            )
+          }
         />
         <Route
           path="/packages/:slug"
-          element={<PackageDetail onOpenBookingWithData={handleOpenBooking} />}
+          element={
+            VIEW_ONLY_MODE ? (
+              <Navigate to="/" replace />
+            ) : (
+              <PackageDetail onOpenBookingWithData={handleOpenBooking} />
+            )
+          }
         />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
       <Footer />

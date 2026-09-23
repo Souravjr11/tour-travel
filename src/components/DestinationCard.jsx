@@ -1,9 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Star, ArrowRight, MapPin } from 'lucide-react';
+import { VIEW_ONLY_MODE } from '../config/siteConfig';
 
 export default function DestinationCard({ dest }) {
   if (!dest) return null;
+
+  const handleScrollToPackages = (e) => {
+    e.preventDefault();
+    const el = document.getElementById('packages');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <article className={`dest-card ${dest.size || 'normal'}`} data-slug={dest.slug}>
@@ -51,17 +60,29 @@ export default function DestinationCard({ dest }) {
             <b>{dest.startPrice}</b>
           </div>
 
-          <Link
-            to={`/destinations/${dest.slug}`}
-            className="dest-link-btn"
-            aria-label={`Explore ${dest.name}`}
-          >
-            <span>Explore</span>
-            <ArrowRight size={15} />
-          </Link>
+          {VIEW_ONLY_MODE ? (
+            <button
+              type="button"
+              onClick={handleScrollToPackages}
+              className="dest-link-btn"
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+              aria-label={`View packages for ${dest.name}`}
+            >
+              <span>View Packages</span>
+              <ArrowRight size={15} />
+            </button>
+          ) : (
+            <Link
+              to={`/destinations/${dest.slug}`}
+              className="dest-link-btn"
+              aria-label={`Explore ${dest.name}`}
+            >
+              <span>Explore</span>
+              <ArrowRight size={15} />
+            </Link>
+          )}
         </div>
       </div>
     </article>
   );
 }
-
